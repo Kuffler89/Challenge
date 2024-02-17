@@ -1,48 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Challenge</title>
-    <h1><img src=""></h1>
 </head>
+
 <!--logo-->
 <body>
-    <div class="desktop-1"><img class="Muñeco" src="imagenes/Muñeco.png" style="z-index: 1;" alt="Muñeco">
-        <div class="texto-rectangulo" style="z-index: 1;">
-            <h1>Ningún mensaje fue encontrado</h1>
-            <h2>Ingresa el texto que desees encriptar o desencriptar.</h2>
-        </div>
-            <!--logo-->
-        <div class="logo"><img  src="imagenes/Logo.png"></div>
-        <!--Botones-->
-            <!--ingrese el texto aqui-->
-        <div>
-            <input type="texto" required placeholder="Ingrese el texto aqui" class="texto">
-        </div>
-            <!--botonera-->
+    <div>
+        <img class="munieco" id="munieco" src="imagenes/Muñeco.png" alt="Munieco" >
+            <div class="rectangule"></div>
+            <div class="textorectangulo">
+                <p class="texto6" id="textorectangulo">Ningún mensaje fue encontrado</p>
+                <p class="texto7" id="textorectangulo1">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>    
+
+            <p class="texto6">
+            <p class="texto7"></p>
+                            <!--rectangletext-->
+        <textarea id="rectangletext" class="rectangletext" cols="30" hidden rows="10"></textarea>
+                             <!--logo-->
+        <img class="logo" src="imagenes/Logo.png">
+                             <!--Botones-->
+                             <!--ingrese el texto aqui-->
+        <textarea type="text"  id="texto" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+        <h3 class="texto2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+          </svg> Solo letras minúsculas y sin acentos</h3>
+                             <!--botonera-->
         <div class="botones">
             <div class="encriptador">
-                <button class="boton1">Encriptador</button>
-                <button class="boton2">Desencriptador</button>
-            </div>    
-        </div> 
-        <div class="rectangulo">
+                <button onclick="Encriptador()" class="boton1">Encriptador</button>
+                <button onclick="Desencriptador()" class="boton2">Desencriptador</button>
+            </div>
+                <button onclick="Copiar()" class="boton3" id="boton3" hidden >Copiar</button>
             <div>
                 
-            </div>
-            
-            
-        </div>
+            </div>    
+        </div> 
+        
 
     </div>
+    <script src="script.js" defer></script>
 
         
-    
-</body>
-<footer>
-
-</footer>
-</html>
